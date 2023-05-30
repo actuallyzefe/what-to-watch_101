@@ -62,7 +62,6 @@ export class OpenaiService {
       moviesArray.push(movies);
 
       return movies;
-      return;
     } catch (error) {
       if (error.response && error.response.status === 429) {
         // Handle rate limit exceeded error
