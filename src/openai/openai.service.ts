@@ -43,7 +43,7 @@ export class OpenaiService {
         4 - Gerçek hikayelere dayanan filmler mi yoksa tamamen kurgusal anlatımlara sahip olanlar mı size daha çok ilgi çeker? Cevap: ${true_story_or_fiction}.
         5 - Belirli bir döneme veya kültürel arka plana sahip filmleri keşfetmek ister misiniz? Cevap: ${specific_time_period_or_cultural_background}.
         Lütfen IMDB puanı yüksek filmlerden öneri yap
-        Cevapları sıralama vesaire belirtmeden SADECE FİLM ADLARYILA YAP VE ARALARINI  "-" İLE AYIR IMDB PUANLARINI GOSTER VE IMDB PUANLARINA GÖRE SIRALAMIŞ OL
+        Cevapları SADECE FİLM ADLARYILA YAP VE ARALARINI  "-" İLE AYIR IMDB PUANLARINI GOSTER VE IMDB PUANLARINA GÖRE SIRALAMIŞ OL
         `;
 
       const response = await this.openai.createCompletion({
